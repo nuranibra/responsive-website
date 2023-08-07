@@ -1,0 +1,502 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    padding:0;
+    margin-top:0;
+}
+
+header , header > .basliq{
+    width: 100%;
+    background-color: #789621;
+}
+
+header{
+    position:fixed;
+    top:0;
+    overflow: hidden;
+}
+
+.basliq{
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    align-self:center;
+    align-items:center;
+}
+
+h1{
+    align-items:center;
+    align-self:center;
+    margin-left:10%;
+    top:0;
+    left:0;
+    background-color: #fff;
+    padding:25px;
+    height: 100%;
+    margin-top:0;
+    margin-bottom:0;
+}
+
+.nav-basliq{
+    margin-right:10%;
+    height:100%;
+}
+
+.nav-basliq > ul{
+    display:flex;
+    list-style:none;
+    height:100%;
+}
+
+.nav-basliq > ul >li >a{
+    text-decoration: none;
+    color:#000;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:18px;
+    align-self:center;
+    align-items:center;
+}
+
+.secenekler{
+    margin:10px;
+}
+
+#open{
+    display:none;
+}
+
+#open:target{
+    display:block;
+}
+
+.hmbrg-button{
+    display:none;
+}
+
+@media all and (max-width:879px){
+    .nav-basliq{
+        display: none;
+    }
+
+    .hmbrg-button{
+        text-decoration: none;
+        color:#fff;
+        font-size:24px;
+        display: flex;
+    }
+
+    #open{
+        top:0;
+        left:0;
+        width:100%;
+        height:100%;
+        position:fixed;
+        text-align:center;
+        background-color: rgba(8, 9, 9, 0.7);
+        font-size:24px;
+        color:#fff;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    #open > ul {
+        list-style:none
+    }
+
+    #open > ul > li > a{
+        color:#fff;
+        text-decoration: none;
+    }
+}
+
+.big-container{
+    width:100%;
+    margin-top:1%;
+    margin-left:0;
+    margin-right:0;
+    display: flex;
+    justify-content: center;
+
+}
+
+.small-container{
+    width: 95%;
+    padding:3%;
+    display: flex;
+    flex-direction: row;
+    margin-top:5%;
+}
+
+h2{
+    font-size:48px;
+    color:#000;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.profile-about{
+    width:50%;
+    font-size:1.3em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.first-child-container{
+    width:60%;
+    transition: calc(1.0s);
+    border-radius:15px;
+    margin-right:5%;
+    padding:2%;
+}
+
+.first-child-container:hover{
+    box-shadow: 0px 0px 25px 5px;
+    background-color: #e4e4e4;
+}
+
+#ricky-photo-profile{
+    border-radius: 50%;
+    width:30%;
+    height:30%;
+}
+
+.second-child-container{
+    display: flex;
+    flex-direction:column;
+    background-color: #fff;
+    padding:2%;
+    border-radius:15px;
+    transition: calc(1.0s);
+}
+
+.second-child-container:hover{
+    box-shadow: 0px 0px 25px 5px;
+    background-color: #e4e4e4;
+}
+
+
+.photo-and-name-profile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.name-profile{
+    font-size:24px;
+    color:#000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    margin-left:5%;
+}
+
+.job-profile{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-right:19%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+h3{
+    font-size:24px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.jobs{
+    font-size:20px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top:0;
+}
+
+.second-big-container{
+    margin-top:7%;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom:7%;
+    flex-direction: column;
+}
+
+.second-small-container{
+    width:97%;
+    height: 100%;
+}
+
+.three-child-container{
+    padding:2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.present{
+    border:solid 1px grey;
+    padding:10%;
+    border-radius:10px;
+    width:100%;
+    box-shadow: 0px 0px 20px 3px;
+    color:#000
+}
+
+.a-div{
+    width:30%;
+    text-decoration: none;
+    transition: calc(1.0s);
+}
+
+.a-div:hover{
+    width:35%;
+    .present >img{
+        width:60%;
+        height:45%;
+    }
+
+    .about-dev{
+        display: block;
+    }
+}
+
+.second-h2{
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-top:5%;
+}
+
+.second-p{
+    font-size:20px;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+.present >img{
+    width: 40%;
+    height:40%;
+    transition: 1.0s;
+}
+
+.present >h3{
+    font-size:24px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.present >p{
+    font-size:14px;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.present > button{
+    border:none;
+    background-color: #000;
+    color:#fff;
+    padding:4%;
+    border-radius:10px;
+    cursor: pointer;
+}
+
+.present >button:active{
+    background-color: #ccc;
+    color:#000;
+}
+
+.hmbrg-button{
+    width:100px;
+    height: 100px;
+}
+
+.home{
+    margin-right:10px;
+}
+
+.three-big-container{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.three-small-container{
+    width:97%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.four-childer-container{
+    width:97%;
+}
+
+.contact-h2{
+    font-size:48px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+.contact-p{
+    font-size:16px;
+    text-align:center;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:3%;
+}
+
+.five-child-container{
+    display:flex;
+    flex-direction: row;
+    margin-bottom:5%;
+    justify-content: space-between;
+    width:97%;
+}
+
+.sms-contact >form{
+    display: flex;
+    flex-direction: column;
+}
+
+.sms-contact{
+    width:40%;
+    box-shadow:0px 0px 20px 3px;
+    border-radius:10px;
+    padding:2%;
+}
+
+.sms-contact >form >label{
+    font-size:20px;
+    font-family:Arial, Helvetica, sans-serif;
+    margin-bottom:1%;
+    margin-top:1%;
+}
+
+.sms-contact >form >input , textarea{
+    font-family:Arial, Helvetica, sans-serif;
+    border-radius:3px;
+    font-size:14px;
+    border:1px solid grey;
+}
+
+.submit-button{
+    margin-toP:5%;
+    width:30%;
+    padding:10px 15px;
+    border:none;
+    background-color: #000;
+    color:#fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius:10px;
+    cursor: pointer;
+    font-size:15px;
+    transition: calc(1.0s);
+}
+
+.submit-button:hover{
+    width:100%;
+    background-color: #ccc;
+    color:#000
+}
+
+.button-div-container{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+.social-contact{
+    height: 30%;
+    width:20%;
+    display: flex;
+    justify-content: center;
+    box-shadow:0px 0px 20px 3px;
+    border-radius:10px;
+}
+
+.social-contact >h3{
+    font-size:20px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 1%;
+}
+
+footer{
+    margin-bottom:-20px;
+    background-color: #789621;
+    bottom:0px;
+    padding:1%;
+    display: flex;
+    justify-content: center;
+    box-shadow:3px 0px 30px 5px;
+    margin-top:10%;
+    flex-direction: column;
+}
+
+.input-p{
+    text-align:center;
+    font-size:24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.order-p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:16px;
+    text-align:center;
+    margin-top:0;
+}
+
+@media all and (max-width:820px){
+    .small-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .first-child-container{
+        display: block;
+        font-size:16px;
+        width:100%;
+        margin-top:30%;
+        margin-bottom:5%;
+    }
+
+    .first-child-container >p{
+        width:100%;
+    }
+
+    .three-child-container{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        justify-content: center;
+    }
+
+    .a-div{
+        width:100%;
+        margin-bottom:3%;
+    }
+
+    .a-div:hover{
+        width:100%;
+
+    }
+
+    h1{
+        padding:40px 15px 40px 15px;
+    }
+
+    .five-child-container{
+        display: flex;
+        flex-direction: column;
+        width:100%;
+        align-items: center;
+    }
+
+    .sms-contact{
+        width:90%;
+    }
+
+    .social-contact{
+        width:90%;
+        height: 120px;
+        margin-top:5%;
+    }
+}
+
